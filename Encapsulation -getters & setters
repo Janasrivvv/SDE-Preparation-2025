@@ -1,0 +1,24 @@
+class Bank{
+     public String name;
+     private String password;
+     protected String email;
+
+     public String getPassword(){
+        return this.password;
+     }
+     public void setPassword(String pass){
+        this.password=pass;
+     }
+
+
+
+}
+public class Main{
+    public static void main(String args[]){
+        Bank b1=new Bank();
+        b1.name="Jana";
+        b1.email="jana@gmail.com";
+        b1.setPassword("abcd");
+        System.out.println(b1.getPassword());
+    }
+}
