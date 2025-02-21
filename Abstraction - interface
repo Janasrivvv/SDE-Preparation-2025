@@ -1,0 +1,21 @@
+//multiple inheritance is possible through interface
+interface Animal{
+    int eyes=2; // static for all can be mentioned here
+    void walk(); //abstract methods can only be created inside interface
+}
+interface Herbivore{
+
+}
+class Horse implements Animal, Herbivore{
+    public void walk(){ //public is must for methods in interface
+        System.out.println("Horse walks on 4 legs");
+    }
+}
+public class Main{
+    public static void main(String args[]){
+        Horse horse=new Horse();
+        horse.walk();
+        
+
+    }
+}
